@@ -19,7 +19,7 @@ app.use(express.json());
 
 
 // navegationController Rutas
-app.get("https://lucasezc.github.io/loginHub/", navegationController.goIndex);
+app.get("/", navegationController.goIndex);
 
 
 
