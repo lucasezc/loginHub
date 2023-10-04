@@ -12,7 +12,7 @@ const navegationController = require("../server/controllers/navegationController
 
 
 //middlewares
-app.use(express.static(path.join(__dirname, '../client')));
+app.use(express.static(path.join(__dirname, './client')));
 app.use(cors());
 app.use(express.json());
 
