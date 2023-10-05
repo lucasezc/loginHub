@@ -19,7 +19,7 @@ app.use(express.json());
 
 
 // navegationController Rutas
-app.get("/index.html", navegationController.goIndex);
+app.get("/", navegationController.goIndex);
 
 
 
