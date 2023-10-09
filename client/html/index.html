@@ -10,21 +10,21 @@
 </head>
 
 <body>
-    <div class="background">
-        <div class="wrapper">
-            <div class="wrapper-content">
+    <div class="background" id="background">
+        <div class="wrapper" id="wrapper">
+            <div class="wrapper-content" id="wrapper-content">
                 <header class="header-container">
                     <nav class="nav-container">
                         <div class="nav-container-logo">
                             <img src="../src/images/logo.png" alt="">
                             <h1 class="nav-container-logo-h1">LoginHub</h1>
                         </div>
-                        <ul class="nav-container-ul-group">
+                        <ul class="nav-container-ul-group" id="navBtn">
                             <li>
                                 <a href="#" class="nav-group" id="btn-sgn">Sign Up</a>
                             </li>
                             <li>
-                                <a href="#" class="nav-group">Log In</a>
+                                <a href="#" class="nav-group" id="btn-lgn">Log In</a>
                             </li>
                         </ul>
                     </nav>
@@ -49,15 +49,16 @@
                 <div class="container-sign-up">
                     <form action="" class="form">
                         <div class="container-sign-up-div">
-                            <div class="form-group">
-                                <h3 class="sign-up-h3">Registro</h1>
-                                    <label for="" class="sign-up-label-group">Nombre de usuario</label>
-                                    <input type="text" class="sign-up-input-group">
+                            <h3 class="sign-up-h3">Create account</h1>
+                                <div class="form-group">
+                                    <label for="" class="sign-up-label-group">Username</label>
+                                    <input type="text" class="sign-up-input-group" id="input">
                                     <label for="" class="sign-up-label-group">E-Mail</label>
-                                    <input type="email" class="sign-up-input-group">
-                                    <label for="" class="sign-up-label-group">Contraseña</label>
-                                    <input type="password" class="sign-up-input-group">
-                            </div>
+                                    <input type="email" class="sign-up-input-group" id="input">
+                                    <label for="" class="sign-up-label-group">Create a password</label>
+                                    <input type="password" class="sign-up-input-group" id="input">
+                                    <button type="submit" id="btnContinue" class="sign-up-btnCreate">CREATE</button>
+                                </div>
                         </div>
                     </form>
                 </div>

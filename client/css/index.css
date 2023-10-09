@@ -51,10 +51,10 @@ a {
   border-radius: 0.3125rem;
   box-shadow: 0rem 0.3125rem 1.25rem 0.0625rem rgb(28, 37, 38);
 }
-
+/* 
 .wrapper:hover {
   box-shadow: 0rem 0.3125rem 1.25rem 0.0625rem rgb(75, 103, 106);
-}
+} */
 
 .wrapper-content {
   display: flex;
@@ -62,7 +62,6 @@ a {
   align-items: center;
   width: 90%;
   height: 100%;
-  overflow-y: visible;
 }
 
 .header-container {
@@ -167,56 +166,90 @@ img {
   background-size: cover;
 }
 
-
-
 /* Sign Up */
 
-
-
-.sign-up{
-  display: none;
-  flex-direction: column;
+.sign-up {
+  display: flex;
   align-items: center;
+  flex-direction: column;
+  display: none;
   position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
+  width: 60%;
+  border-radius: 10px;
 }
 
-.container-sign-up{
+/* .sign-up:hover{
+  box-shadow: 0rem 0.3125rem 1.25rem 0.0625rem rgb(75, 103, 106);
+} */
+
+.container-sign-up-div {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.container-sign-up {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.937);
+  border-radius: 10px;
 }
 
-.sign-up-h3{
+.container-sign-up h3 {
+  padding-bottom: 0px;
+}
+
+.sign-up-h3 {
   color: white;
   width: 100%;
   text-align: center;
+  margin-bottom: 20px;
+  font-size: 34px;
 }
 
-.sign-up-label-group{
+.sign-up-label-group {
+  position: relative;
+  top: 12px;
   color: white;
 }
 
-.sign-up-input-group{
+.sign-up-input-group {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 200px;
-  height: 20px;
+  width: 250px;
+  height: 40px;
+  border: none;
+  background-color: #01010100;
+  border-bottom: 1px solid rgba(239, 238, 238, 0.566);
+  color: var(--main-text);
+  outline: none;
 }
 
-input{
-  margin: 50px;
+.sign-up-input-group:focus{
+  border-bottom: 1px solid rgb(255, 255, 255) ;
 }
 
+input {
+  margin: 10px 0px;
+}
 
+.sign-up-btnCreate{
+  color: var(--main-text);
+  font-size: 18px;
+  width: 260px;
+  height: 50px;
+  background-color:#00000071;
+  border: none;
+  border-radius: 5px;
+  cursor: url("../src/cursor/Anathema White Link Select.cur"), auto;
+}
 
+button[type="submit"]{
+  margin-top: 15px;
+}
 
 @media screen and (max-width: 47.1875rem) {
   .wrapper {
@@ -241,4 +274,19 @@ input{
   .nav-container-logo-h1 {
     display: none;
   }
+
+  /* .sign-up {
+    width: auto;
+    height: auto;
+  }
+
+  .container-sign-up{
+    width: auto;
+    height: auto;
+  }
+
+  .form-group{
+    width: auto;
+    height: auto;
+  } */
 }

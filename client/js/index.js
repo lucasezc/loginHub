@@ -29,7 +29,17 @@
 
 const btnAccount = document.getElementById("btn-sgn");
 const signUp = document.getElementById("sign-up");
+const wrapperContent = document.getElementById("wrapper-content");
+const background = document.getElementById("background");
+const wrapper = document.getElementById("wrapper");
+const navBtn = document.getElementById("navBtn");
+const readMore = document.getElementById("readMore");
 
 btnAccount.addEventListener("click", () => {
     signUp.style.display = "flex";
-})
+    wrapperContent.style.filter = "blur(2rem)";
+    wrapper.style.boxShadow = "box-shadow: 0rem 0.3125rem 1.25rem 0.0625rem rgb(75, 103, 106);";
+    wrapper.style.background = "rgba(0, 0, 0, 1.416);";
+    navBtn.style.display = "none";
+    readMore.style.display = "none";
+});
