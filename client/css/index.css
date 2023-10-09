@@ -253,7 +253,6 @@ button[type="submit"]{
 
 @media screen and (max-width: 47.1875rem) {
   .wrapper {
-    height: auto;
     padding: 1.25rem;
   }
 
