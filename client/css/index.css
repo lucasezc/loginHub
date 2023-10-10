@@ -174,7 +174,7 @@ img {
   flex-direction: column;
   display: none;
   position: absolute;
-  width: 60%;
+  width: 80%;
   border-radius: 10px;
 }
 
@@ -251,6 +251,28 @@ button[type="submit"]{
   margin-top: 15px;
 }
 
+
+
+/* btnClose */
+
+.sign-up-btn-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  width: 40px;
+  height: 30px;
+  border: none;
+  background-color:#206a6f;
+  color: rgb(243, 243, 243);
+  cursor: url("../src/cursor/Anathema White Link Select.cur"), auto;
+}
+
+
+
+
+
+
 @media screen and (max-width: 47.1875rem) {
   .wrapper {
     padding: 1.25rem;
@@ -269,24 +291,16 @@ button[type="submit"]{
     color: var(--main-text);
     background-color: #206a6f;
     border-radius: 0.3125rem;
-    cursor: url("../src/cursor/Anathema White Link Select.cur"), auto;
   }
   .nav-container-logo-h1 {
     display: none;
   }
 
-  /* .sign-up {
-    width: auto;
-    height: auto;
+  .sign-up-btn-close{
+    right: -20px;
+    top: -15px;
+    width: 20px;
+    height: 20px;
   }
 
-  .container-sign-up{
-    width: auto;
-    height: auto;
-  }
-
-  .form-group{
-    width: auto;
-    height: auto;
-  } */
 }

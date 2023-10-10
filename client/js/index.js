@@ -34,6 +34,9 @@ const background = document.getElementById("background");
 const wrapper = document.getElementById("wrapper");
 const navBtn = document.getElementById("navBtn");
 const readMore = document.getElementById("readMore");
+const btnClose = document.getElementById("btnClose");
+
+
 
 btnAccount.addEventListener("click", () => {
     signUp.style.display = "flex";
@@ -42,4 +45,12 @@ btnAccount.addEventListener("click", () => {
     wrapper.style.background = "rgba(0, 0, 0, 1.416);";
     navBtn.style.display = "none";
     readMore.style.display = "none";
+
+    btnClose.addEventListener("click", () => {
+        signUp.style.display = "none";
+        wrapperContent.style.filter = "blur(0)";
+        navBtn.style.display = "flex";
+        readMore.style.display = "block";
+    });
+
 });
