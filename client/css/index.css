@@ -268,7 +268,9 @@ button[type="submit"]{
   cursor: url("../src/cursor/Anathema White Link Select.cur"), auto;
 }
 
-
+.sign-up-btn-close:hover{
+  background-color: #2d8b91;
+}
 
 
 
